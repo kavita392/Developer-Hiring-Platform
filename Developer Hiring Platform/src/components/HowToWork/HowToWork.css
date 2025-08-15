@@ -1,0 +1,192 @@
+.how-to-work {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.work-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.work-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  margin-bottom: 30px; /* Controls gap between title and subtitle */
+}
+
+.steps-container {
+  max-width: 1138px;
+  margin-top: 0 ;
+}
+.section-subtitle {
+  margin-bottom: 40px; /* Reduce from default (maybe 40-50px in your current CSS) */
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  position: relative;
+}
+
+.step-item {
+  text-align: center;
+  position: relative;
+}
+
+.step-icon-container {
+  position: relative;
+  margin-bottom: 30px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-bg-icon {
+  position: absolute;
+  width: 179px;
+  height: 179px;
+  z-index: 1;
+}
+
+.step-circle {
+  width: 179px;
+  height: 179px;
+  background: white;
+  border: 8px solid #2FC980;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.step-icon {
+  width: 74px;
+  height: 74px;
+}
+
+.step-number {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 63px;
+  height: 63px;
+  background: #FF8C91;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.step-number span {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  line-height: 42px;
+}
+
+.step-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #233A41;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.step-description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #132A31;
+  max-width: 244px;
+  margin: 0 auto;
+}
+
+.step-arrow {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.step-arrow img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.63;
+}
+
+.steps-grid .step-item:last-child .step-arrow {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+  
+  .step-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-to-work {
+    padding: 60px 0;
+  }
+  
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .step-icon-container {
+    height: 180px;
+  }
+  
+  .step-circle {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .step-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .step-number span {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+

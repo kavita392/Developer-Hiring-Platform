@@ -1,0 +1,156 @@
+.banner {
+  position: relative;
+  height: 681px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.banner-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  display: grid;
+  grid-template-columns: 1fr 457px;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+.banner-left {
+  max-width: 671px;
+}
+
+.banner-title {
+
+    display: flex;
+  align-items: center;
+  gap: 12px; /* space between text and line */
+  font-size: 48px;
+  font-weight: bold;
+  /* display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold; */
+
+
+  /* margin-bottom: 40px; */
+}
+
+.title-highlight {
+
+color: #00c06d;
+  position: relative;
+
+ /* color: #00c06d; */
+
+  /* display: block;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 75px;
+  color: #2FC980;
+  text-transform: uppercase;
+  margin-bottom: 10px; */
+}
+
+.title-underline {
+
+   width: 80px; /* Adjust length */
+  height: 3px;  /* Thickness of line */
+  background-color: #00c06d;
+  margin: 0 12px;
+  /* width: 199px;
+  height: 4px;
+  background-color: #2FC980;
+  margin-bottom: 20px; */
+
+}
+
+.title-main {
+  /* display: block;
+  font-size: 98px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #233A41;
+  text-transform: uppercase; */
+    color: #222;
+}
+
+.banner-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #233A41;
+  margin-bottom: 20px;
+}
+
+.banner-description {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #132A31;
+  margin-bottom: 40px;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.banner-right {
+  justify-self: end;
+}
+
+@media (max-width: 1200px) {
+  .banner-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .banner-right {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
+    padding: 60px 0;
+  }
+  
+  .title-highlight::after {
+    /* font-size: 32px;
+    line-height: 48px; */
+
+      content: "";
+  display: inline-block;
+  height: 3px;
+  width: 80px; /* length of underline */
+  background-color: #00c06d;
+  margin-left: 12px; /* space between text and line */
+  vertical-align: middle;
+  }
+  
+  .title-main {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  
+  .banner-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

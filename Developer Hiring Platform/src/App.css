@@ -1,0 +1,86 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Background decorative elements */
+.App::before {
+  content: '';
+  position: absolute;
+  top: 1596px;
+  left: -35px;
+  width: 436px;
+  height: 436px;
+  background: rgba(255, 133, 120, 0.33);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.App::after {
+  content: '';
+  position: absolute;
+  top: 856px;
+  right: -101px;
+  width: 436px;
+  height: 436px;
+  background: rgba(47, 201, 128, 0.13);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Additional decorative circles */
+.decorative-circle-1 {
+  position: absolute;
+  top: 2481px;
+  right: -158px;
+  width: 436px;
+  height: 436px;
+  background: rgba(47, 201, 128, 0.31);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.decorative-circle-2 {
+  position: absolute;
+  top: 3390px;
+  right: -44px;
+  width: 436px;
+  height: 436px;
+  background: rgba(255, 133, 120, 0.2);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.decorative-circle-3 {
+  position: absolute;
+  top: 5345px;
+  right: -48px;
+  width: 436px;
+  height: 436px;
+  background: rgba(47, 201, 128, 0.26);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.decorative-circle-4 {
+  position: absolute;
+  top: 5857px;
+  left: -200px;
+  width: 436px;
+  height: 436px;
+  background: rgba(255, 133, 120, 0.29);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .App::before,
+  .App::after,
+  .decorative-circle-1,
+  .decorative-circle-2,
+  .decorative-circle-3,
+  .decorative-circle-4 {
+    display: none;
+  }
+}
